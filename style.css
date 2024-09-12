@@ -1,0 +1,13 @@
+input {
+    width: 75px;
+    height: 75px;
+}
+
+#calcOutput {
+    height: 175px;
+}
+
+.row div {
+    display: flex;
+    justify-content: center;
+}

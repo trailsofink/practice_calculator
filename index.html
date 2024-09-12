@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section id="calc" class="d-flex justify-content-center">
+		<div id="calcWrapper" class="flex-grow-1 flex-md-grow-0 rounded-3 bg-dark m-md-3">
+			<div id="calcOutput" class="bg-light rounded-3 m-4 p-5 text-end"><span></span></div>
+			<div class="container">
+				<div class="row g-1 m-4">
+					<div class="col-3 align-items-center">
+						<input id="clear" type="button" aria-valuetext="" value="AC" class="bg-light p-3 rounded-pill">
+					</div>
+					<div class="col-3">
+						<input id="plusOrMinus" type="button" aria-valuetext="" value="+/-" class="bg-light p-3 rounded-pill">
+					</div>
+					<div class="col-3">
+						<input id="percent" type="button" aria-valuetext="" value="%" class="bg-light p-3 rounded-pill">
+					</div>
+					<div id="operator" class="col-3">
+						<input type="button" aria-valuetext="/" value="÷" class="bg-light p-3 rounded-pill">
+					</div>
+				</div>
+				<div class="row g-1 m-4">
+					<div class="col-3">
+						<input id="number" type="button" aria-valuetext="7" value="7" class="bg-light p-3 rounded-pill">
+					</div>
+					<div class="col-3">
+						<input id="number" type="button" aria-valuetext="8" value="8" class="bg-light p-3 rounded-pill">
+					</div>
+					<div class="col-3">
+						<input id="number" type="button" aria-valuetext="9" value="9" class="bg-light p-3 rounded-pill">
+					</div>
+					<div class="col-3">
+						<input id="operator" type="button" aria-valuetext="*" value="x" class="bg-light p-3 rounded-pill">
+					</div>
+				</div>
+				<div class="row g-1 m-4">
+					<div class="col-3">
+						<input type="button" aria-valuetext="4" value="4" class="bg-light p-3 rounded-pill">
+					</div>
+					<div class="col-3">
+						<input type="button" aria-valuetext="5" value="5" class="bg-light p-3 rounded-pill">
+					</div>
+					<div class="col-3">
+						<input type="button" aria-valuetext="6" value="6" class="bg-light p-3 rounded-pill">
+					</div>
+					<div class="col-3">
+						<input type="button" aria-valuetext="-" value="-" class=" bg-light p-3 rounded-pill">
+					</div>
+				</div>
+				<div class="row g-1 m-4">
+					<div class="col-3">
+						<input id="one" type="button" aria-valuetext="1" value="1" class="bg-light p-3 rounded-pill">
+					</div>
+					<div class="col-3">
+						<input id="two" type="button" aria-valuetext="2" value="2" class="bg-light p-3 rounded-pill">
+					</div>
+					<div class="col-3">
+						<input id="3" type="button" aria-valuetext="3" value="3" class="bg-light p-3 rounded-pill">
+					</div>
+					<div class="col-3">
+						<input id="+" type="button" aria-valuetext="+" value="+" class=" bg-light p-3 rounded-pill">
+					</div>
+				</div>
+				<div class="row g-1 m-4">
+					<div class="col-6">
+						<input type="button" aria-valuetext="0" value="0" class="bg-light p-3 rounded-pill">
+					</div>
+					<div class="col-3">
+						<input type="button" aria-valuetext="." value="." class="bg-light p-3 rounded-pill">
+					</div>
+					<div class="col-3">
+						<input type="button" aria-valuetext="" value="=" class=" bg-light p-3 rounded-pill">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>
