@@ -13,6 +13,7 @@ let isEqual = false;
 
 const calcOutput = document.querySelector('#calcOutput');
 
+
 calculator.addEventListener('click', function(event) {
 
     let btnValue = event.target.ariaValueText;
@@ -20,13 +21,19 @@ calculator.addEventListener('click', function(event) {
     let btnValueStr = btnValueShown.toString();
 
     function add() {
-        calculation.push(btnValue);
+        let term = {};
+        let i = calculation.length + 1;
+
+        term[`term${i}`] = [];
+        term[`term${i}`].push(btnValue);
+        calculation.push({[`term${i}`]: term[`term${i}`]});
         calcOutput.lastElementChild.insertAdjacentHTML('beforeend', btnValueStr);
     };
 
     function clear() {
-        calcOutput.innerHTML = '';
+        calcOutput.innerHTML = '<span></span>';
         calculation = []; 
+        calculation.push('Welcome');
         isAnswer = false;
     }
 
