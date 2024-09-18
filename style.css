@@ -3,7 +3,7 @@ input {
     height: 75px;
 }
 
-#calcOutput {
+#calcOutputWrapper {
     height: 175px;
 }
 

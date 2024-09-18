@@ -9,7 +9,14 @@
 <body>
 	<section id="calc" class="d-flex justify-content-center">
 		<div id="calcWrapper" class="flex-grow-1 flex-md-grow-0 rounded-3 bg-dark m-md-3">
-			<div id="calcOutput" class="bg-light rounded-3 m-4 p-5 text-end"><span></span></div>
+			<div id="calcOutputWrapper" class="bg-light rounded-3 m-4 p-5 text-end">
+				<div id="calcHist">
+					<span></span>
+				</div>
+				<div id="calcOutput">
+					<span></span>
+				</div>
+			</div>
 			<div class="container">
 				<div class="row g-1 m-4">
 					<div class="col-3 align-items-center">
@@ -40,42 +47,42 @@
 					</div>
 				</div>
 				<div class="row g-1 m-4">
-					<div class="col-3">
-						<input type="button" aria-valuetext="4" value="4" class="bg-light p-3 rounded-pill">
+					<div id="number" class="col-3">
+						<input id="number" type="button" aria-valuetext="4" value="4" class="bg-light p-3 rounded-pill">
 					</div>
 					<div class="col-3">
-						<input type="button" aria-valuetext="5" value="5" class="bg-light p-3 rounded-pill">
+						<input id="number" type="button" aria-valuetext="5" value="5" class="bg-light p-3 rounded-pill">
 					</div>
 					<div class="col-3">
-						<input type="button" aria-valuetext="6" value="6" class="bg-light p-3 rounded-pill">
+						<input id="number" type="button" aria-valuetext="6" value="6" class="bg-light p-3 rounded-pill">
 					</div>
 					<div class="col-3">
-						<input type="button" aria-valuetext="-" value="-" class=" bg-light p-3 rounded-pill">
+						<input id="operator" type="button" aria-valuetext="-" value="-" class=" bg-light p-3 rounded-pill">
 					</div>
 				</div>
 				<div class="row g-1 m-4">
 					<div class="col-3">
-						<input id="one" type="button" aria-valuetext="1" value="1" class="bg-light p-3 rounded-pill">
+						<input id="number" type="button" aria-valuetext="1" value="1" class="bg-light p-3 rounded-pill">
 					</div>
 					<div class="col-3">
-						<input id="two" type="button" aria-valuetext="2" value="2" class="bg-light p-3 rounded-pill">
+						<input id="number" type="button" aria-valuetext="2" value="2" class="bg-light p-3 rounded-pill">
 					</div>
 					<div class="col-3">
-						<input id="3" type="button" aria-valuetext="3" value="3" class="bg-light p-3 rounded-pill">
+						<input id="number" type="button" aria-valuetext="3" value="3" class="bg-light p-3 rounded-pill">
 					</div>
 					<div class="col-3">
-						<input id="+" type="button" aria-valuetext="+" value="+" class=" bg-light p-3 rounded-pill">
+						<input id="operator" type="button" aria-valuetext="+" value="+" class=" bg-light p-3 rounded-pill">
 					</div>
 				</div>
 				<div class="row g-1 m-4">
 					<div class="col-6">
-						<input type="button" aria-valuetext="0" value="0" class="bg-light p-3 rounded-pill">
+						<input id="number" type="button" aria-valuetext="0" value="0" class="bg-light p-3 rounded-pill">
 					</div>
 					<div class="col-3">
-						<input type="button" aria-valuetext="." value="." class="bg-light p-3 rounded-pill">
+						<input id="number" type="button" aria-valuetext="." value="." class="bg-light p-3 rounded-pill">
 					</div>
 					<div class="col-3">
-						<input type="button" aria-valuetext="" value="=" class=" bg-light p-3 rounded-pill">
+						<input id="equals" type="button" aria-valuetext="" value="=" class=" bg-light p-3 rounded-pill">
 					</div>
 				</div>
 			</div>
